@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Timeline Infographic - Educational Technology</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+    .timeline-container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      color: #004d40;
+    }
+    h2 {
+      color: #00796b;
+      margin-bottom: 50px;
+    }
+    .timeline {
+      position: relative;
+      margin: 50px 0;
+      padding: 0;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: #00796b;
+      transform: translateX(-50%);
+    }
+    .timeline-event {
+      position: relative;
+      width: 50%;
+      padding: 20px 40px;
+      box-sizing: border-box;
+    }
+    .timeline-event:nth-child(odd) {
+      left: 0;
+      text-align: right;
+    }
+    .timeline-event:nth-child(even) {
+      left: 50%;
+      text-align: left;
+    }
+    .timeline-event::before {
+      content: '';
+      position: absolute;
+      top: 20px;
+      width: 20px;
+      height: 20px;
+      background: #00796b;
+      border-radius: 50%;
+      z-index: 1;
+    }
+    .timeline-event:nth-child(odd)::before {
+      right: -10px;
+    }
+    .timeline-event:nth-child(even)::before {
+      left: -10px;
+    }
+    .content-box {
+      background: #00796b;
+      color: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .year {
+      font-weight: bold;
+      margin-bottom: 5px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="timeline-container">
+    <h1>TIMELINE INFOGRAPHIC</h1>
+    <h2>How Technology Helped us Learn and Educate ourselves more Faster and more Convenient for this new Generation </h2>
+
+    <div class="timeline">
+      <div class="timeline-event">
+        <div class="content-box">
+          <div class="year">1990</div>
+          <div><strong>School Integration of Computers</strong><br>
+            Typing/word processing occurred as basic computer labs were introduced within schools. Educational software was created via floppy disk and CD-ROMs (e.g., Encarta, Reader Rabbit).</div>
+        </div>
+      </div>
+
+      <div class="timeline-event">
+        <div class="content-box">
+          <div class="year">2000</div>
+          <div><strong>School Integration of the Internet</strong><br>
+            Internet access was provided in schools and homes. Research shifted to Google; email and forums enabled collaboration with teachers and peers.</div>
+        </div>
+      </div>
+
+      <div class="timeline-event">
+        <div class="content-box">
+          <div class="year">2005</div>
+          <div><strong>Video/Multimedia Based Learning</strong><br>
+            YouTube introduced free educational content. Smartboards replaced chalkboards. Multimedia tools like PowerPoint became standard.</div>
+        </div>
+      </div>
+
+      <div class="timeline-event">
+        <div class="content-box">
+          <div class="year">2010</div>
+          <div><strong>Mobile Learning/Cloud Based Tools</strong><br>
+            Smartphones and apps (Khan Academy, Quizlet) became learning tools. Google Docs and Classrooms enabled collaboration in real-time.</div>
+        </div>
+      </div>
+
+      <div class="timeline-event">
+        <div class="content-box">
+          <div class="year">2015</div>
+          <div><strong>Online Learning Options Abound</strong><br>
+            Platforms like Edmodo and Canvas became common. MOOCs (Coursera, edX) offered access to quality education. Students built digital portfolios.</div>
+        </div>
+      </div>
+
+      <div class="timeline-event">
+        <div class="content-box">
+          <div class="year">2020</div>
+          <div><strong>Pandemic Move to Remote Learning</strong><br>
+            Zoom, Google Meet enabled online classes. Lessons became more flexible through screen shares, breakout rooms, and digital whiteboards.</div>
+        </div>
+      </div>
+
+      <div class="timeline-event">
+        <div class="content-box">
+          <div class="year">2025</div>
+          <div><strong>AI/Immersive Learning (Emerging)</strong><br>
+            AI tools like ChatGPT helped with writing and research. VR and AR are starting to be used for immersive educational experiences.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
